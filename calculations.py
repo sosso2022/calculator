@@ -1,20 +1,4 @@
-# calculator/calculations.py
-from typing import Union
-#def add(a, b):
-#    return float(a + b)
-
-#def subtract(a, b):
-#    return float(a - b)
-
-#def multiply(a, b):
-#    return float(a * b)
-
-#def divide(a, b):
-#    if b == 0:
-#        raise ZeroDivisionError("division by zero")
-#    return float(a / b)
-
-def add(a: Union[float, int], b: Union[float, int]) -> float:
+def add(a, b):
     """Compute and return the sum of two numbers.
 
     Examples:
@@ -24,15 +8,15 @@ def add(a: Union[float, int], b: Union[float, int]) -> float:
         6.0
 
     Args:
-        a: A number representing the first addend in the addition.
-        b: A number representing the second addend in the addition.
+        a (float): A number representing the first addend in the addition.
+        b (float): A number representing the second addend in the addition.
 
     Returns:
-        A number representing the arithmetic sum of `a` and `b`.
+        float: A number representing the arithmetic sum of `a` and `b`.
     """
     return float(a + b)
 
-def subtract(a: Union[float, int], b: Union[float, int]) -> float:
+def subtract(a, b):
     """Calculate the difference of two numbers.
 
     Examples:
@@ -42,15 +26,15 @@ def subtract(a: Union[float, int], b: Union[float, int]) -> float:
         2.0
 
     Args:
-        a: A number representing the minuend in the subtraction.
-        b: A number representing the subtrahend in the subtraction.
+        a (float): A number representing the minuend in the subtraction.
+        b (float): A number representing the subtrahend in the subtraction.
 
     Returns:
-        A number representing the difference between `a` and `b`.
+        float: A number representing the difference between `a` and `b`.
     """
     return float(a - b)
 
-def multiply(a: Union[float, int], b: Union[float, int]) -> float:
+def multiply(a, b):
     """Compute and return the product of two numbers.
 
     Examples:
@@ -60,15 +44,15 @@ def multiply(a: Union[float, int], b: Union[float, int]) -> float:
         8.0
 
     Args:
-        a: A number representing the multiplicand in the multiplication.
-        b: A number representing the multiplier in the multiplication.
+        a (float): A number representing the multiplicand in the multiplication.
+        b (float): A number representing the multiplier in the multiplication.
 
     Returns:
-        A number representing the product of `a` and `b`.
+        float: A number representing the product of `a` and `b`.
     """
     return float(a * b)
 
-def divide(a: Union[float, int], b: Union[float, int]) -> float:
+def divide(a, b):
     """Compute and return the quotient of two numbers.
 
     Examples:
@@ -82,11 +66,11 @@ def divide(a: Union[float, int], b: Union[float, int]) -> float:
         ZeroDivisionError: division by zero
 
     Args:
-        a: A number representing the dividend in the division.
-        b: A number representing the divisor in the division.
+        a (float): A number representing the dividend in the division.
+        b (float): A number representing the divisor in the division.
 
     Returns:
-        A number representing the quotient of `a` and `b`.
+        float: A number representing the quotient of `a` and `b`.
 
     Raises:
         ZeroDivisionError: An error occurs when the divisor is `0`.
