@@ -2,7 +2,6 @@ site_name: Calculation Docs
 
 theme:
   name: "material"
-  #--md-code-hl-function-color
 
 plugins:
   - mkdocstrings

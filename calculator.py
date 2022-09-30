@@ -1,4 +1,4 @@
-# calculator/calculations.py
+# calculator.py
 from typing import Union
 
 def add(a: Union[float, int], b: Union[float, int]) -> float:
